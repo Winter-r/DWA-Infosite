@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cybersecurity Awareness — Learn & Protect</title>
+  <meta name="description"
+    content="Practical, neutral cybersecurity guidance: recognising online threats, staying private, and protecting accounts." />
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  <!-- ====== Header ====== -->
+  <header>
+    <div class="wrap nav" id="topNav">
+      <div class="brand">
+        <img src="/assets/img/khalifa-logo.png" alt="Khalifa University Logo">
+      </div>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primaryNav" onclick="toggleNav()">☰ Menu</button>
+      <nav class="navlinks" id="primaryNav" aria-label="Primary">
+        <a href="#learn">Learn</a>
+        <a href="#threats">Threats</a>
+        <a href="#protect">Protect</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#report">Report & Help</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====== Hero ====== -->
+    <section class="hero">
+      <div class="wrap">
+        <span class="pill" aria-label="site purpose">Educational Resource • Khalifa University</span>
+        <h1>Cybersecurity Awareness</h1>
+        <p>Explore simple, effective ways to protect your online presence and understand the risks of the darker side of
+          the internet.</p>
+        <div class="cta">
+          <a class="btn" href="#quiz">Take the Quiz</a>
+          <a class="btn secondary" href="#learn">Start Learning</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Learn ====== -->
+    <section id="learn">
+      <div class="wrap">
+        <h2>What is the “dark web” — and why does it matter?</h2>
+        <div class="grid">
+          <article class="card half">
+            <h3>Layers of the web</h3>
+            <ul class="list">
+              <li><strong>Surface web:</strong> Indexed pages you can find with normal search engines.</li>
+              <li><strong>Deep web:</strong> Content behind logins (e.g., private dashboards, cloud storage).</li>
+              <li><strong>Dark web:</strong> A small part of the deep web that requires special software to access. It
+                enables anonymity and is used for both privacy tools and, at times, illicit marketplaces.</li>
+            </ul>
+            <p class="small notice">Important: this site does <em>not</em> link to or access dark‑web sites. Examples
+              shown are synthetic and for teaching only.</p>
+          </article>
+          <article class="card half">
+            <h3>Why people are targeted</h3>
+            <ul class="list">
+              <li>Accounts with weak or reused passwords.</li>
+              <li>Phishing emails that imitate trusted services.</li>
+              <li>Social‑engineering via messaging apps and social media.</li>
+            </ul>
+          </article>
+        </div>
+        <details class="card2">
+          <summary>How anonymity tools get abused (high‑level, safe)</summary>
+          <p>Some criminals combine privacy tools to hide activity while buying or selling stolen data, malware, or
+            illicit services. This site focuses on recognising signs of these crimes (phishing, account takeover, scam
+            patterns), not on accessing harmful platforms.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ====== Threats ====== -->
+    <section id="threats">
+      <div class="wrap">
+        <h2>Common threats you can spot quickly</h2>
+        <div class="grid">
+          <article class="card half">
+            <h3>Phishing & impostor messages</h3>
+            <ul class="list">
+              <li>Mismatched sender domains & urgency cues ("verify now" / threats).</li>
+              <li>Links that mask destinations; unexpected attachments.</li>
+              <li>Requests for codes or passwords (legitimate services won't ask).</li>
+            </ul>
+          </article>
+          <article class="card half">
+            <h3>Account takeovers</h3>
+            <ul class="list">
+              <li>Reused passwords exposed in breaches.</li>
+              <li>No multi‑factor authentication (MFA).</li>
+              <li>Credential‑stuffing and SIM‑swap attempts.</li>
+            </ul>
+          </article>
+          <article class="card half">
+            <h3>Marketplace scams</h3>
+            <ul class="list">
+              <li>Too‑good‑to‑be‑true pricing and pressure to pay off‑platform.</li>
+              <li>New accounts with no history or copied photos.</li>
+              <li>Payment requests via irreversible methods (crypto/gift cards).</li>
+            </ul>
+          </article>
+          <article class="card half">
+            <h3>Privacy leaks</h3>
+            <ul class="list">
+              <li>Oversharing personal data on public profiles.</li>
+              <li>Installing risky extensions or apps with broad permissions.</li>
+              <li>Using public Wi‑Fi without a trusted VPN.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Protect ====== -->
+    <section id="protect">
+      <div class="wrap">
+        <h2>Protect yourself in 7 moves</h2>
+        <ol class="list">
+          <li>Turn on <strong>MFA</strong> for email, bank, and social apps.</li>
+          <li>Use a <strong>password manager</strong> and unique, long passwords.</li>
+          <li>Update devices and browsers; enable auto‑updates.</li>
+          <li>Verify unexpected messages via a second channel.</li>
+          <li>Limit public profile information and privacy leaks.</li>
+          <li>Back up important files to a trusted cloud or encrypted drive.</li>
+          <li>If something feels off, <span class="kbd">pause</span> and ask — urgency is a common scam tactic.</li>
+        </ol>
+        <p class="notice">Tip: many reputable password managers offer discounts; check official vendor offers.</p>
+      </div>
+    </section>
+
+    <!-- ====== Quiz ====== -->
+    <section id="quiz">
+      <div class="wrap">
+        <h2>Quick self‑check</h2>
+        <p class="small">This short quiz is anonymous and for learning only. Some items are placeholder scenarios while
+          we expand our bank.</p>
+        <form class="quiz" id="quizForm" aria-describedby="quizNote">
+          <p id="quizNote" class="small">Tip: if you're unsure, choose the most cautious option.</p>
+          <!-- Q1 -->
+          <div class="q">
+            <p><strong>1.</strong> A message says your account will be closed in 2 hours unless you verify your password
+              via a link. What’s the safest action?</p>
+            <label><input type="radio" name="q1" value="a"> Click quickly to avoid losing access</label><br>
+            <label><input type="radio" name="q1" value="b"> Ignore and do nothing</label><br>
+            <label><input type="radio" name="q1" value="c"> Verify via the official portal you type manually or a
+              bookmark</label>
+          </div>
+          <!-- Q2 -->
+          <div class="q">
+            <p><strong>2.</strong> The strongest password below is:</p>
+            <label><input type="radio" name="q2" value="a"> Password123!</label><br>
+            <label><input type="radio" name="q2" value="b"> P@ssw0rd2024</label><br>
+            <label><input type="radio" name="q2" value="c"> aC0rn-bus.sleet#violet//ripple (saved in a manager)</label>
+          </div>
+          <!-- Q3 -->
+          <div class="q">
+            <p><strong>3.</strong> A marketplace seller insists on crypto payment and rushes you. Best response?</p>
+            <label><input type="radio" name="q3" value="a"> Proceed — crypto is fast</label><br>
+            <label><input type="radio" name="q3" value="b"> Decline and report the listing</label><br>
+            <label><input type="radio" name="q3" value="c"> Ask for a small discount first</label>
+          </div>
+          <!-- Q4 -->
+          <div class="q">
+            <p><strong>4.</strong> MFA codes should be shared with:</p>
+            <label><input type="radio" name="q4" value="a"> Support agents who ask</label><br>
+            <label><input type="radio" name="q4" value="b"> Close friends only</label><br>
+            <label><input type="radio" name="q4" value="c"> No one</label>
+          </div>
+          <!-- Q5 -->
+          <div class="q">
+            <p><strong>5.</strong> On public Wi‑Fi you should:</p>
+            <label><input type="radio" name="q5" value="a"> Log in to banking — it’s fine</label><br>
+            <label><input type="radio" name="q5" value="b"> Use a trusted VPN or wait for a secure network</label><br>
+            <label><input type="radio" name="q5" value="c"> Turn off auto‑updates</label>
+          </div>
+          <!-- Q6 -->
+          <div class="q">
+            <p><strong>6.</strong> Example message: "Urgent! Confirm your account" with a shortened link. What’s the
+              safest move?</p>
+            <label><input type="radio" name="q6" value="a"> Click the short link</label><br>
+            <label><input type="radio" name="q6" value="b"> Type the legitimate site URL yourself and check notices
+              there</label><br>
+            <label><input type="radio" name="q6" value="c"> Reply and ask if it’s real</label>
+          </div>
+          <!-- Q7 -->
+          <div class="q">
+            <p><strong>7.</strong> You reused your email password on a forum that was breached. Best immediate step?</p>
+            <label><input type="radio" name="q7" value="a"> Wait to see if anything happens</label><br>
+            <label><input type="radio" name="q7" value="b"> Change email password and enable MFA; update any reused
+              passwords</label><br>
+            <label><input type="radio" name="q7" value="c"> Delete the email account</label>
+          </div>
+          <!-- Q8 -->
+          <div class="q">
+            <p><strong>8.</strong> Someone asks for your one‑time code to "help with a login". What do you do?</p>
+            <label><input type="radio" name="q8" value="a"> Share it because you know them</label><br>
+            <label><input type="radio" name="q8" value="b"> Never share codes; verify identity and direct them to
+              official support</label><br>
+            <label><input type="radio" name="q8" value="c"> Share the code but change your password later</label>
+          </div>
+          <!-- Q9 -->
+          <div class="q">
+            <p><strong>9.</strong> Marketplace listing: brand‑new laptop for 90% off, seller requests gift cards. Safest
+              action?</p>
+            <label><input type="radio" name="q9" value="a"> Proceed — great deal</label><br>
+            <label><input type="radio" name="q9" value="b"> Report/avoid — classic scam patterns</label><br>
+            <label><input type="radio" name="q9" value="c"> Ask for a bigger discount</label>
+          </div>
+          <!-- Q10 -->
+          <div class="q">
+            <p><strong>10.</strong> Your browser offers to update. What’s best?</p>
+            <label><input type="radio" name="q10" value="a"> Delay updates to avoid restarts</label><br>
+            <label><input type="radio" name="q10" value="b"> Accept the update and enable auto‑updates</label><br>
+            <label><input type="radio" name="q10" value="c"> Uninstall and reinstall later</label>
+          </div>
+          <button type="button" class="btn" onclick="scoreQuiz()">Score me</button>
+          <p id="quizResult" class="score" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ====== Report ====== -->
+    <section id="report">
+      <div class="wrap">
+        <h2>Report & get help</h2>
+        <div class="grid">
+          <div class="card half">
+            <h3>Local support</h3>
+            <ul class="list">
+              <li>Contact your organisation or workplace IT team for account or network incidents.</li>
+              <li>For hacked accounts, change passwords and follow provider recovery steps.</li>
+            </ul>
+          </div>
+          <div class="card half">
+            <h3>Online reporting</h3>
+            <ul class="list">
+              <li>Report phishing and fraud to your email or platform provider.</li>
+              <li>Use national CERT / cyber‑incident reporting portals for serious incidents.</li>
+            </ul>
+            <p class="small notice danger">If someone is in immediate danger, contact local emergency services
+              immediately.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Resources ====== -->
+    <section id="resources">
+      <div class="wrap">
+        <h2>Further learning</h2>
+        <ul class="list">
+          <li>INTERPOL — Cybercrime overview.</li>
+          <li>UNODC — Cybercrime resources.</li>
+          <li>CISA — Stop Ransomware guidance.</li>
+        </ul>
+        <p class="small">These official sources offer broad, non‑technical advice. This site does not link to or endorse
+          illegal content.</p>
+      </div>
+    </section>
+
+    <!-- ====== About ====== -->
+    <section id="about">
+      <div class="wrap">
+        <h2>About</h2>
+        <p>This site is an independent, educational resource created to help people recognise online threats and take
+          practical steps to protect themselves. Content is for general guidance and not legal advice. Examples and
+          simulations on the site are synthetic and safe.</p>
+        <p class="small">Questions? Use the contact form on the site or reach out via the listed channels.</p>
+      </div>
+    </section>
+
+    <!-- ====== Contact ====== -->
+    <section id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <div class="card">
+          <p>Have a question or suggestion? Use our contact form and we’ll get back to you.</p>
+          <p>
+            <a class="btn" href="https://forms.gle/cYXD4M9ZbFccKcHU6" target="_blank" rel="noopener noreferrer">Open
+              Contact Form</a>
+            <span class="small" style="margin-left:10px">(opens Google Forms in a new tab)</span>
+          </p>
+          <p class="small" style="margin-top:12px">Privacy note: do not include sensitive personal information in the
+            form. For security incidents, follow the reporting steps above.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer>
+    <div class="wrap">
+      <p class="small">© <span id="yr"></span> Khalifa University. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+
+</html>
